@@ -1,0 +1,41 @@
+﻿<Fluent:RibbonWindow x:Class="FluentBrowser.MainWindow"
+                     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                     xmlns:Fluent="urn:fluent-ribbon"
+                     Title="FluentBrowser" 
+                     Width="800" 
+                     Height="600">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Fluent:Ribbon Grid.Row="0">
+            <Fluent:RibbonTabItem Header="시작">
+                <Fluent:RibbonGroupBox Header="기본">
+                    <Fluent:Button Header="뒤로가기" Icon="assets/img/iconfinder_arrow_left_66678.png" LargeIcon="assets/img/iconfinder_arrow_left_66678.png" />
+                    <Fluent:Button Header="앞으로" Icon="assets/img/iconfinder_arrow_right_66681.png" LargeIcon="assets/img/iconfinder_arrow_right_66681.png" />
+                    <Fluent:Button Header="새로고침" Icon="assets/img/iconfinder_arrow_refresh_66680.png" LargeIcon="assets/img/iconfinder_arrow_refresh_66680.png" />
+                    <Fluent:Button Header="홈으로" Icon="assets/img/iconfinder_Home_669946.png" LargeIcon="assets/img/iconfinder_Home_669946.png" />
+                </Fluent:RibbonGroupBox>
+                <Fluent:RibbonGroupBox Header="즐겨찾기">
+                    <Fluent:Button Header="추가하기" Icon="assets/img/iconfinder_star_add_66879.png" LargeIcon="assets/img/iconfinder_star_add_66879.png" />
+                    <Fluent:Button Header="목록보기" Icon="assets/img/iconfinder_star_full_66927.png" LargeIcon="assets/img/iconfinder_star_full_66927.png" />
+                </Fluent:RibbonGroupBox>
+                <Fluent:RibbonGroupBox Header="도구">
+                    <Fluent:Button Header="소스보기" Icon="assets/img/iconfinder_file__html__web__3350536.png" LargeIcon="assets/img/iconfinder_file__html__web__3350536.png" />
+                    <Fluent:Button Header="다운로드" Icon="assets/img/iconfinder_arrow_down_66677.png" LargeIcon="assets/img/iconfinder_arrow_down_66677.png" />
+                </Fluent:RibbonGroupBox>
+                <Fluent:RibbonGroupBox Header="렌더링">
+                    <Fluent:Button Header="MSHTML" Icon="assets/img/iconfinder_IE-destroy_63357.png" LargeIcon="assets/img/iconfinder_IE-destroy_63357.png" />
+                    <Fluent:Button Header="EdgeHTML" Icon="assets/img/iconfinder_internet_explorer_291689.png" LargeIcon="assets/img/iconfinder_internet_explorer_291689.png" />
+                </Fluent:RibbonGroupBox>
+            </Fluent:RibbonTabItem>
+        </Fluent:Ribbon>
+
+        <Grid Grid.Row="1">
+            <TabControl x:Name="BrowserTab"/>
+        </Grid>
+    </Grid>
+</Fluent:RibbonWindow>
