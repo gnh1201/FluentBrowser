@@ -17,7 +17,7 @@
                     <Fluent:Button Header="뒤로" Icon="assets/img/iconfinder_arrow_left_66678.png" LargeIcon="assets/img/iconfinder_arrow_left_66678.png" />
                     <Fluent:Button Header="앞으로" Icon="assets/img/iconfinder_arrow_right_66681.png" LargeIcon="assets/img/iconfinder_arrow_right_66681.png" />
                     <Fluent:Button Header="새로고침" Icon="assets/img/iconfinder_arrow_refresh_66680.png" LargeIcon="assets/img/iconfinder_arrow_refresh_66680.png" />
-                    <Fluent:Button Header="홈으로" Icon="assets/img/iconfinder_Home_669946.png" LargeIcon="assets/img/iconfinder_Home_669946.png" />
+                    <Fluent:Button Header="홈으로" Icon="assets/img/iconfinder_hand-wash-04-health-quarantine-sars-covid19-coronavirus_6123781.png" LargeIcon="assets/img/iconfinder_hand-wash-04-health-quarantine-sars-covid19-coronavirus_6123781.png" />
                 </Fluent:RibbonGroupBox>
                 <Fluent:RibbonGroupBox Header="즐겨찾기">
                     <Fluent:Button Header="추가하기" Icon="assets/img/iconfinder_star_add_66879.png" LargeIcon="assets/img/iconfinder_star_add_66879.png" />
