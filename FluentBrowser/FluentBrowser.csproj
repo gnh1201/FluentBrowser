@@ -201,6 +201,7 @@
     <Resource Include="assets\img\iconfinder_icon-24-key_314756.png" />
     <Resource Include="assets\img\iconfinder_038_027_share_code_link_html_android_material_3171645.png" />
     <Resource Include="assets\img\iconfinder_16_5243663.png" />
+    <Resource Include="assets\img\iconfinder_f-script_256_282462.png" />
     <Content Include="Firefox\AccessibleHandler.dll" />
     <Content Include="Firefox\AccessibleMarshal.dll" />
     <Content Include="Firefox\d3dcompiler_47.dll" />

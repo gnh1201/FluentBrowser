@@ -27,8 +27,9 @@
                     <Fluent:Button Header="소스보기" Icon="assets/img/iconfinder_038_027_share_code_link_html_android_material_3171645.png" LargeIcon="assets/img/iconfinder_038_027_share_code_link_html_android_material_3171645.png" />
                     <Fluent:Button Header="다운로드" Icon="assets/img/iconfinder_download_1055068.png" LargeIcon="assets/img/iconfinder_download_1055068.png" />
                     <Fluent:Button Header="비밀번호" Icon="assets/img/iconfinder_icon-24-key_314756.png" LargeIcon="assets/img/iconfinder_icon-24-key_314756.png" />
+                    <Fluent:Button Header="자동화" Icon="assets/img/iconfinder_f-script_256_282462.png" LargeIcon="assets/img/iconfinder_f-script_256_282462.png" />
                 </Fluent:RibbonGroupBox>
-                <Fluent:RibbonGroupBox Header="렌더링">
+                <Fluent:RibbonGroupBox Header="렌더링 엔진">
                     <Fluent:Button Header="MSHTML" Icon="assets/img/iconfinder_IE-destroy_63357.png" LargeIcon="assets/img/iconfinder_IE-destroy_63357.png" />
                     <Fluent:Button Header="EdgeHTML" Icon="assets/img/iconfinder_internet_explorer_291689.png" LargeIcon="assets/img/iconfinder_internet_explorer_291689.png" />
                     <Fluent:Button Header="Chromium" Icon="assets/img/iconfinder_icon_chrome_54549.png" LargeIcon="assets/img/iconfinder_icon_chrome_54549.png" Click="Button_Click_Chromium" />
