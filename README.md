@@ -6,6 +6,7 @@ Web browsing with multiple engine
   * EdgeHTML (edgehtml.dll) - todo
   * Chromium (ex: Google Chrome) - CefSharp
   * Gecko (ex: Firefox) - GeckoFX
+  * Support automation - todo
 
 ## Screenshot
 ![Screenshot](screenshot.png)
