@@ -3,8 +3,8 @@
                      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                      xmlns:Fluent="urn:fluent-ribbon"
                      Title="FluentBrowser" 
-                     Width="800" 
-                     Height="600">
+                     Width="1024"
+                     Height="786">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
@@ -14,7 +14,7 @@
         <Fluent:Ribbon Grid.Row="0">
             <Fluent:RibbonTabItem Header="시작">
                 <Fluent:RibbonGroupBox Header="기본">
-                    <Fluent:Button Header="뒤로가기" Icon="assets/img/iconfinder_arrow_left_66678.png" LargeIcon="assets/img/iconfinder_arrow_left_66678.png" />
+                    <Fluent:Button Header="뒤로" Icon="assets/img/iconfinder_arrow_left_66678.png" LargeIcon="assets/img/iconfinder_arrow_left_66678.png" />
                     <Fluent:Button Header="앞으로" Icon="assets/img/iconfinder_arrow_right_66681.png" LargeIcon="assets/img/iconfinder_arrow_right_66681.png" />
                     <Fluent:Button Header="새로고침" Icon="assets/img/iconfinder_arrow_refresh_66680.png" LargeIcon="assets/img/iconfinder_arrow_refresh_66680.png" />
                     <Fluent:Button Header="홈으로" Icon="assets/img/iconfinder_Home_669946.png" LargeIcon="assets/img/iconfinder_Home_669946.png" />
@@ -24,18 +24,30 @@
                     <Fluent:Button Header="목록보기" Icon="assets/img/iconfinder_star_full_66927.png" LargeIcon="assets/img/iconfinder_star_full_66927.png" />
                 </Fluent:RibbonGroupBox>
                 <Fluent:RibbonGroupBox Header="도구">
-                    <Fluent:Button Header="소스보기" Icon="assets/img/iconfinder_file__html__web__3350536.png" LargeIcon="assets/img/iconfinder_file__html__web__3350536.png" />
-                    <Fluent:Button Header="다운로드" Icon="assets/img/iconfinder_arrow_down_66677.png" LargeIcon="assets/img/iconfinder_arrow_down_66677.png" />
+                    <Fluent:Button Header="소스보기" Icon="assets/img/iconfinder_038_027_share_code_link_html_android_material_3171645.png" LargeIcon="assets/img/iconfinder_038_027_share_code_link_html_android_material_3171645.png" />
+                    <Fluent:Button Header="다운로드" Icon="assets/img/iconfinder_download_1055068.png" LargeIcon="assets/img/iconfinder_download_1055068.png" />
+                    <Fluent:Button Header="비밀번호" Icon="assets/img/iconfinder_icon-24-key_314756.png" LargeIcon="assets/img/iconfinder_icon-24-key_314756.png" />
                 </Fluent:RibbonGroupBox>
                 <Fluent:RibbonGroupBox Header="렌더링">
                     <Fluent:Button Header="MSHTML" Icon="assets/img/iconfinder_IE-destroy_63357.png" LargeIcon="assets/img/iconfinder_IE-destroy_63357.png" />
                     <Fluent:Button Header="EdgeHTML" Icon="assets/img/iconfinder_internet_explorer_291689.png" LargeIcon="assets/img/iconfinder_internet_explorer_291689.png" />
+                    <Fluent:Button Header="Chromium" Icon="assets/img/iconfinder_icon_chrome_54549.png" LargeIcon="assets/img/iconfinder_icon_chrome_54549.png" Click="Button_Click_Chromium" />
+                    <Fluent:Button Header="Gecko" Icon="assets/img/iconfinder_firefox_54536.png" LargeIcon="assets/img/iconfinder_firefox_54536.png" Click="Button_Click_Gekco" />
+                </Fluent:RibbonGroupBox>
+                <Fluent:RibbonGroupBox Header="지원">
+                    <Fluent:Button Header="설정" Icon="assets/img/iconfinder_system_54582.png" LargeIcon="assets/img/iconfinder_system_54582.png" />
+                    <Fluent:Button Header="도움말" Icon="assets/img/iconfinder_question_mark_811462.png" LargeIcon="assets/img/iconfinder_question_mark_811462.png" />
                 </Fluent:RibbonGroupBox>
             </Fluent:RibbonTabItem>
         </Fluent:Ribbon>
 
         <Grid Grid.Row="1">
-            <TabControl x:Name="BrowserTab"/>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <TextBox Grid.Row="0" x:Name="URLText" BorderThickness="0" VerticalContentAlignment="Center"/>
+            <TabControl Grid.Row="1" x:Name="BrowserTab"/>
         </Grid>
     </Grid>
 </Fluent:RibbonWindow>
