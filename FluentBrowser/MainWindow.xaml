@@ -4,7 +4,7 @@
                      xmlns:Fluent="urn:fluent-ribbon"
                      Title="FluentBrowser" 
                      Width="1024"
-                     Height="786">
+                     Height="1024">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
@@ -22,6 +22,7 @@
                 <Fluent:RibbonGroupBox Header="즐겨찾기">
                     <Fluent:Button Header="추가하기" Icon="assets/img/iconfinder_star_add_66879.png" LargeIcon="assets/img/iconfinder_star_add_66879.png" />
                     <Fluent:Button Header="목록보기" Icon="assets/img/iconfinder_star_full_66927.png" LargeIcon="assets/img/iconfinder_star_full_66927.png" />
+                    <Fluent:Button Header="방문기록" Icon="assets/img/iconfinder_recent_history_replay_repeat_5402415.png" LargeIcon="assets/img/iconfinder_recent_history_replay_repeat_5402415.png" />
                 </Fluent:RibbonGroupBox>
                 <Fluent:RibbonGroupBox Header="도구">
                     <Fluent:Button Header="소스보기" Icon="assets/img/iconfinder_038_027_share_code_link_html_android_material_3171645.png" LargeIcon="assets/img/iconfinder_038_027_share_code_link_html_android_material_3171645.png" />
@@ -30,10 +31,9 @@
                     <Fluent:Button Header="자동화" Icon="assets/img/iconfinder_f-script_256_282462.png" LargeIcon="assets/img/iconfinder_f-script_256_282462.png" />
                 </Fluent:RibbonGroupBox>
                 <Fluent:RibbonGroupBox Header="렌더링 엔진">
-                    <Fluent:Button Header="MSHTML" Icon="assets/img/iconfinder_IE-destroy_63357.png" LargeIcon="assets/img/iconfinder_IE-destroy_63357.png" />
-                    <Fluent:Button Header="EdgeHTML" Icon="assets/img/iconfinder_internet_explorer_291689.png" LargeIcon="assets/img/iconfinder_internet_explorer_291689.png" />
-                    <Fluent:Button Header="Chromium" Icon="assets/img/iconfinder_icon_chrome_54549.png" LargeIcon="assets/img/iconfinder_icon_chrome_54549.png" Click="Button_Click_Chromium" />
-                    <Fluent:Button Header="Gecko" Icon="assets/img/iconfinder_firefox_54536.png" LargeIcon="assets/img/iconfinder_firefox_54536.png" Click="Button_Click_Gekco" />
+                    <Fluent:Button Header="Default" Icon="assets/img/iconfinder_internet_explorer_291689.png" LargeIcon="assets/img/iconfinder_internet_explorer_291689.png" Click="Button_Click_Browser_Default" />
+                    <Fluent:Button Header="Chromium" Icon="assets/img/iconfinder_icon_chrome_54549.png" LargeIcon="assets/img/iconfinder_icon_chrome_54549.png" Click="Button_Click_Browser_Chromium" />
+                    <Fluent:Button Header="Gecko" Icon="assets/img/iconfinder_firefox_54536.png" LargeIcon="assets/img/iconfinder_firefox_54536.png" Click="Button_Click_Browser_Gekco" />
                 </Fluent:RibbonGroupBox>
                 <Fluent:RibbonGroupBox Header="지원">
                     <Fluent:Button Header="설정" Icon="assets/img/iconfinder_system_54582.png" LargeIcon="assets/img/iconfinder_system_54582.png" />

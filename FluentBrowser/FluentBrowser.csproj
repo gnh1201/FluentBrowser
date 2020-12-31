@@ -113,6 +113,10 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Engine\Chromium\Browser.cs" />
+    <Compile Include="Engine\Chromium\LifeSpanHandler.cs" />
+    <Compile Include="Engine\Gekco\Browser.cs" />
+    <Compile Include="Engine\Trident\Browser.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -204,6 +208,7 @@
     <Resource Include="assets\img\iconfinder_f-script_256_282462.png" />
     <Resource Include="assets\img\iconfinder_skyscraper-02_1989000.png" />
     <Resource Include="assets\img\iconfinder_hand-wash-04-health-quarantine-sars-covid19-coronavirus_6123781.png" />
+    <Resource Include="assets\img\iconfinder_recent_history_replay_repeat_5402415.png" />
     <Content Include="Firefox\AccessibleHandler.dll" />
     <Content Include="Firefox\AccessibleMarshal.dll" />
     <Content Include="Firefox\d3dcompiler_47.dll" />

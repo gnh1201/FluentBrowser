@@ -1,10 +1,8 @@
 ﻿using Fluent;
 using System.Windows.Controls;
-using CefSharp.Wpf;
 using Gecko;
 using System.Windows.Forms.Integration;
-using System.IO;
-using System.Reflection;
+using System;
 
 namespace FluentBrowser
 {
@@ -21,47 +19,53 @@ namespace FluentBrowser
 
         private void CreateChromiumTab()
         {
-            var browser = new ChromiumWebBrowser("m.naver.com");
-            browser.AddressChanged += (sender, e) =>
-            {
-                URLText.Text = browser.Address;
-            };
+            var browser = new Engine.Chromium.Browser();
+            browser.Initialize("google.com");
 
             var tab = new TabItem();
             tab.Header = "Chromium";
-            tab.Content = browser;
+            tab.Content = browser.getBrowser();
             BrowserTab.Items.Add(tab);
             tab.Focus();
         }
 
         private void CreateGekcoTab()
         {
-            Xpcom.Initialize("Firefox64");
-
-            var browser = new GeckoWebBrowser();
-            browser.Navigate("m.naver.com");
-            browser.LocationChanged += (sender, e) => {
-                URLText.Text = browser.Url.AbsoluteUri;
-            };
-
-            WindowsFormsHost whost = new WindowsFormsHost();
-            whost.Child = browser;
+            var browser = new Engine.Gekco.Browser();
+            browser.Initialize("google.com");
 
             var tab = new TabItem();
             tab.Header = "Gekco";
-            tab.Content = whost;
+            tab.Content = browser.getBrowser();
             BrowserTab.Items.Add(tab);
             tab.Focus();
         }
 
-        private void Button_Click_Chromium(object sender, System.Windows.RoutedEventArgs e)
+        private void CreateDefaultTab()
+        {
+            var browser = new Engine.Trident.Browser();
+            browser.Initialize("google.com");
+
+            var tab = new TabItem();
+            tab.Header = "WebBrowser";
+            tab.Content = browser.getBrowser();
+            BrowserTab.Items.Add(tab);
+            tab.Focus();
+        }
+
+        private void Button_Click_Browser_Chromium(object sender, System.Windows.RoutedEventArgs e)
         {
             CreateChromiumTab();
         }
 
-        private void Button_Click_Gekco(object sender, System.Windows.RoutedEventArgs e)
+        private void Button_Click_Browser_Gekco(object sender, System.Windows.RoutedEventArgs e)
         {
             CreateGekcoTab();
+        }
+
+        private void Button_Click_Browser_Default(object sender, System.Windows.RoutedEventArgs e)
+        {
+            CreateDefaultTab();
         }
     }
 }
